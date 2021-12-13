@@ -1,0 +1,11 @@
+:root {
+    --default-cell-bg: #E7EAEF;
+    --mt-cell-bg: #E91676;
+    --mt-cell-fg: #FFFFFF;
+    --md-cell-bg: #FF896B;
+    --md-cell-fg: #FFFFFF;
+    --lt-cell-bg: #167CB5;
+    --lt-cell-fg: #FFFFFF;
+    --ld-cell-bg: #88D0FF;
+    --ld-cell-fg: #FFFFFF;
+}

@@ -1,0 +1,73 @@
+#table {
+    display: flex;
+    flex-direction: column;
+    --cell-height: 50px;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    display: flex;
+    min-height: var(--cell-height);
+    max-width: var(--cell-height);
+    margin: 0 2px 2px 0;
+    border-radius: 4px;
+    background-color: var(--default-cell-bg);
+}
+
+.cell::after {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: var(--cell-height);
+}
+
+.mt::after {
+    content: 'MT';
+}
+
+.mt {
+    background-color: var(--mt-cell-bg);
+    color: var(--mt-cell-fg);
+}
+
+.md::after {
+    content: 'MD';
+}
+
+.md {
+    background-color: var(--md-cell-bg);
+    color: var(--md-cell-fg);
+}
+
+.lt::after {
+    content: 'LT';
+}
+
+.lt {
+    background-color: var(--lt-cell-bg);
+    color: var(--lt-cell-fg);
+}
+
+.ld::after {
+    content: 'LD';
+}
+
+.ld {
+    background-color: var(--ld-cell-bg);
+    color: var(--ld-cell-fg);
+}
+
+.star::after {
+    content: '★';
+    font-size: 32px;
+    align-items: normal;
+    line-height: normal;
+}
